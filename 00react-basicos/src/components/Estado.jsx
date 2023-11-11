@@ -1,12 +1,38 @@
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { Component } from "react";
 
-function Estado() {
+function EstadoAHijo(props) {
   return (
     <div>
-      <h2>El Estado</h2>
+      <h3>{props.contadorHijo}</h3>
     </div>
   );
 }
 
-export default Estado;
+export default class Estado extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      contador: 0,
+    };
+
+    /*setInterval(() => {
+      //this.state.contador += 1;
+      this.setState({
+        contador: this.state.contador + 1,
+      });
+    }, 1000);*/
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>El State</h2>
+        <p>{this.state.contador}</p>
+        <EstadoAHijo contadorHijo={this.state.contador} />
+      </div>
+    );
+  }
+}
