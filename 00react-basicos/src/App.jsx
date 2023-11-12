@@ -6,7 +6,9 @@ import Propiedades from "./components/Propiedades";
 import Estado from "./components/Estado";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoDeElementos from "./components/RenderizadoDeElementos";
-import Eventos from "./components/Eventos";
+import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
+import ComunicacionComponentes from "./components/ComunicacionComponentes";
+import CicloDeVida from "./components/CicloDeVida";
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
               numero={19}
               booleano={true}
               arreglo={[1, 2, 3]}
-              objeto={{ nombre: "Jon", correo: "jonmircha@gmail.com" }}
+              objeto={{ nombre: "Moises", correo: "moisesup.25@gmail.com" }}
               funcion={(num) => num * num}
               elementoReact={<i>Esto es un elemento React</i>}
               componenteReact={
@@ -35,7 +37,15 @@ function App() {
             <hr />
             <RenderizadoDeElementos />
             <hr />
-            <Eventos />
+            <EventosES6 />
+            <hr />
+            <EventosES7 />
+            <hr />
+            <MasSobreEventos />
+            <hr />
+            <ComunicacionComponentes />
+            <hr />
+            <CicloDeVida />
           </section>
         </header>
       </div>
