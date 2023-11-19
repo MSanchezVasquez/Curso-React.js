@@ -17,6 +17,7 @@ import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizados from "./components/HooksPersonalizados";
 import Referencias from "./components/Referencias";
 import Formularios from "./components/Formularios";
+import Estilos from "./components/Estilos";
 
 function App() {
   return (
@@ -70,9 +71,8 @@ function App() {
             <Referencias />
             <hr />
             <Formularios />
-            <br />
-            <br />
-            <br />
+            <hr />
+            <Estilos />
           </section>
         </header>
       </div>
